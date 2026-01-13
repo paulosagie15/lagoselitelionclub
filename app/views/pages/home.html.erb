@@ -1,2 +1,652 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <%# <div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 column-gap-3"> %>
+
+
+
+
+
+
+<%# <div class="card" style="width: 2rem; height: 2rem"> %>
+
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">   <div class="p-1">
+
+ <div class="my-3">
+  <div class="p-2"> <div class="card" style="width: 4rem; height: 4rem">
+    <%= image_tag "log.jpg" %>
+<p><strong>Lions Club International</strong> </p>
+</div>
+</div>
+
+  </div>
+
+
+</div>
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+
+
+            <!-- Example single danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    About Us
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Our Leader</a></li>
+    <li><a class="dropdown-item" href="#">History</a></li>
+
+  </ul>
+</div>
+            <a class="nav-link active" aria-current="page" href="#">Our stories</a>
+            <a class="nav-link active" aria-current="page" href="#">Focus Area</a>
+            <a class="nav-link active" aria-current="page" href="#">Donate</a>
+            <a class="nav-link active" aria-current="page" href="#">News</a>
+            <a class="nav-link active" aria-current="page" href="#">Events</a>
+            <a class="nav-link active" aria-current="page" href="#">Gallary</a>
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            <a class="nav-link active" aria-current="page" href="#">Members of portal</a>
+            <a class="nav-link active" aria-current="page" href="#">Find a Club</a>
+            <div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+
+  </div>
+</div>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="p-5">
+
+
+<div class="container-fluid">
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 33rem">
+  <%= image_tag "disaster.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="disaster"><strong>DISASTER RELIEF</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+
+
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+      <div class="card" style="width: 33rem">
+  <%= image_tag "hunger.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="hunger"><strong>HUNGER RELIEF</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 33rem">
+  <%= image_tag "childhoodcancer.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0"href="childhood"><strong>CHILDHOOD CANCER</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+     <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 33rem">
+  <%= image_tag "group10.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+      <div class="card" style="width: 33rem">
+  <%= image_tag "group11.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0"href="community_work"><strong>Community Services</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 33rem">
+  <%= image_tag "group13.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+     <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 33rem">
+  <%= image_tag "enviroment.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="enviroment"><strong>ENVIRONMENT RELIEF</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+      <div class="card" style="width: 32rem">
+  <%= image_tag "vission.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>VISSION</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 30rem">
+  <%= image_tag "youth.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="youth"><strong>YOUTH</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 33rem">
+  <%= image_tag "humanitarian.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0"href="humanitarian"><strong>HUMANITARIAN RELIEF</strong></a>
+
+
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+      <div class="card" style="width: 32rem">
+  <%= image_tag "diabetes.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0"href="diabetes"><strong>DIABETES</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 30rem ">
+  <%= image_tag "youth.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="youth"><strong>YOUTH</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+     <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 33rem">
+  <%= image_tag "group8.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+      <div class="card" style="width: 48rem">
+  <%= image_tag "group9.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0"href="community_work"><strong>Community Services</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 64rem">
+  <%= image_tag "group12.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+     <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 35rem">
+  <%= image_tag "present.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+      <div class="card" style="width: 49rem">
+  <%= image_tag "volun32.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-50">
+       <div class="card" style="width: 35rem">
+  <%= image_tag "volun31.png" %>
+   <a class="link-offset-2 link-underline link-underline-opacity-0"href="community_work"><strong>Community Services</strong></a>
+      <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+
+</div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="container-fluid">
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"><h2> <strong> Who We Are</strong></h2>
+ <p> Welcome to Lions Clubs International District 404B2 Nigeria, a community of dedicated individuals committed to making a positive impact in our society. Our members come from diverse backgrounds but share a common goal: to serve others with passion, compassion, and humility.<br>
+
+With clubs located throughout Nigeria, we strive to address the unique needs of our local communities while also collaborating with fellow Lions Clubs around the globe to create sustainable change. From providing access to quality education, healthcare, and economic opportunities to combating climate change and promoting peace and international understanding, we are dedicated to serving those most in need.</p>
+.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card" style="width: 50rem">
+  <%= image_tag "leader.png" %>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     <div class="card" style="width: 50rem">
+  <%= image_tag "womenleader.png" %>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+
+      <div class="card-body">
+        <h5 class="card-title"><strong>District Governor</strong></h5>
+        <p class="card-text">
+Greetings, fellow Lions and cherished friends!
+It is with heartfelt joy and a deep sense of responsibility that I welcome you to the 2025–2026 Lions Service Year. Together, we will embark on a journey rooted in compassion, service, and impactful leadership.
+This is a year for REAL service. As your District Governor, I encourage you to show an unwavering commitment to serve, as we work together to create meaningful and sustainable change in our communities.
+Our district stands firmly on the foundation of service that uplifts, empowers, and transforms. With your passion and dedication, I am confident that we will surpass our goals and leave a lasting legacy of kindness, hope, and unity.
+Let us make this a remarkable year by serving with purpose and leading with heart.
+Yours in service,
+Lion Oluwakemi Eribake MJF NLCF
+District Governor 2025/2026.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="text-center">
+<h2><strong>From Our News Desk</strong></h2>
+</div>
+</div>
+<div class="container-fluid">
+<div class="card-group">
+  <div class="card">
+
+
+
+    <div class="card" style="width: 50rem">
+   <p><a class="link-opacity-10-hover" href="#"><%= image_tag "group11.png" %></a></p>
+
+      <h5 class="card-title">Lagos Elites Lion Club</h5>
+
+
+    </div>
+  </div>
+  <div class="card">
+     <div class="card" style="width: 50rem">
+    <p><a class="link-opacity-10-hover" href="#"><%= image_tag "group12.png" %></a></p>
+
+
+      <h5 class="card-title">Lagos Elites Lion Club.</h5>
+
+    </div>
+  </div>
+  <div class="card">
+     <div class="card" style="width: 50rem">
+<p><a class="link-opacity-10-hover" href="#"><%= image_tag "group13.png" %></a></p>
+
+      <h5 class="card-title">Lagos Elites Lion Club.</h5>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+
+<button type="button" class="btn btn-outline-secondary">All Stories</button>
+</div>
+</div>
+
+<div class="p-1">
+
+<div class="container-fluid">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="card" style="width: 110rem; height: 90rem">
+ <%= image_tag "volun9.png" %>
+  <div class="card-body">
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="card" style="width: 110rem; height: 90rem">
+
+  <%= image_tag "volun31.png" %>
+  <div class="card-body">
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+     <div class="card" style="width: 110rem; height: 90rem">
+   <%= image_tag "volun26.png" %>
+  <div class="card-body">
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="p-1">
+
+<div class="p-3 mb-2 bg-info text-dark">
+
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="col"><strong>ABOUT US</strong><br>
+    <p>We are a passionate group of individuals dedicated to community service, advocacy, and upholding the values of compassion, leadership, and community. As part of Lions Clubs International, we are united in our mission to uplift those in need and promote peace and understanding globally.</p>
+    </div>
+    <div class="col"><strong>MORE INFORMATION</strong><br>
+      <p><a class="link-opacity-10-hover" href="#">About Us<br></a></p>
+<p><a class="link-opacity-10-hover" href="#">Focus Areas<br></a></p>
+  <p><a class="link-opacity-10-hover" href="#">History<br></a></p>
+  <p><a class="link-opacity-10-hover" href="#">Our Leaders<br></a></p>
+ <p><a class="link-opacity-10-hover" href="#">News<br></a></p>
+   <p><a class="link-opacity-10-hover" href="#">Events  <br></a></p>
+    </div>
+    <div class="col"> <strong>NAVIGATION </strong> <br>
+
+ <p><a class="link-opacity-10-hover" href="#"> Our Stories   <br></a></p>
+  <p><a class="link-opacity-10-hover" href="#"> Club Locator  Our Stories   <br></a></p>
+   <p><a class="link-opacity-10-hover" href="#"> Donate   <br></a></p>
+    <p><a class="link-opacity-10-hover" href="#"> Members Portal  <br></a></p>
+   <p><a class="link-opacity-10-hover" href="#"> Contact   <br></a></p>
+    <p><a class="link-opacity-10-hover" href="#"> Gallery   <br></a></p>
+      <p><a class="link-opacity-10-hover" href="#"> Resources </a></p>
+
+
+
+
+
+
+
+</div>
+
+    <div class="col"><strong>REACH US</strong>
+    <div class>CONTACT ADDRESS <br>
+
+29, Olayeni Abiola street Opebi Ikeja <br>
+Lagos State<b>
+Ngeria.<br>
+Tel:+2348034145957 <br>
+Email:Lagoseliteslionclub@gmail.com<br>
+Website:www.lagoseliteslionclub.com<br>
+<div class="p-5">
+
+<p class="text-primary">FOLLOW US</p>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://github.com"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+    <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+    <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div></div>
