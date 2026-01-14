@@ -24,14 +24,17 @@
 
 <%# <div class="card" style="width: 2rem; height: 2rem"> %>
 
-<nav class="navbar bg-body-tertiary fixed-top">
-  <div class="container-fluid">
+
+
+  <nav class="navbar bg-body-tertiary fixed-top">
     <a class="navbar-brand" href="#">   <div class="p-1">
 
  <div class="my-3">
   <div class="p-2"> <div class="card" style="width: 4rem; height: 4rem">
     <%= image_tag "log.jpg" %>
-<p><strong>Lions Club International</strong> </p>
+
+
+<p class="text-primary">Lagos Elites Lions Club</p>
 </div>
 </div>
 
@@ -121,14 +124,20 @@
         </form>
       </div>
     </div>
-  </div>
+
 </nav>
 
 
-<div class="p-5">
+<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 row-gap-3">
+  <div class="p-2">Grid item 1</div>
+  <div class="p-2">Grid item 2</div>
+  <div class="p-2">Grid item 3</div>
+  <div class="p-2">Grid item 4</div>
+</div>
 
 
-<div class="container-fluid">
+
+
 
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -137,7 +146,7 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 33rem">
+       <div class="card" style="width: 43rem">
   <%= image_tag "disaster.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="disaster"><strong>DISASTER RELIEF</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -154,7 +163,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-      <div class="card" style="width: 33rem">
+      <div class="card" style="width: 40rem">
   <%= image_tag "hunger.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="hunger"><strong>HUNGER RELIEF</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -169,7 +178,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 33rem">
+       <div class="card" style="width: 40rem">
   <%= image_tag "childhoodcancer.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0"href="childhood"><strong>CHILDHOOD CANCER</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -189,7 +198,7 @@
      <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 33rem">
+       <div class="card" style="width: 40rem">
   <%= image_tag "group10.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -204,7 +213,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-      <div class="card" style="width: 33rem">
+      <div class="card" style="width: 40rem">
   <%= image_tag "group11.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0"href="community_work"><strong>Community Services</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -219,7 +228,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 33rem">
+       <div class="card" style="width: 40rem">
   <%= image_tag "group13.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -239,7 +248,7 @@
      <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 33rem">
+       <div class="card" style="width: 40rem">
   <%= image_tag "enviroment.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="enviroment"><strong>ENVIRONMENT RELIEF</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -254,7 +263,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-      <div class="card" style="width: 32rem">
+      <div class="card" style="width: 40rem">
   <%= image_tag "vission.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>VISSION</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -269,7 +278,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 30rem">
+       <div class="card" style="width: 40rem">
   <%= image_tag "youth.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="youth"><strong>YOUTH</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -305,7 +314,7 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 33rem">
+       <div class="card" style="width: 40rem">
   <%= image_tag "humanitarian.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0"href="humanitarian"><strong>HUMANITARIAN RELIEF</strong></a>
 
@@ -321,7 +330,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-      <div class="card" style="width: 32rem">
+      <div class="card" style="width: 40rem">
   <%= image_tag "diabetes.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0"href="diabetes"><strong>DIABETES</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -336,7 +345,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 30rem ">
+       <div class="card" style="width: 40rem ">
   <%= image_tag "youth.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="youth"><strong>YOUTH</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -406,7 +415,7 @@
      <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 35rem">
+       <div class="card" style="width: 50rem">
   <%= image_tag "present.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -421,7 +430,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-      <div class="card" style="width: 49rem">
+      <div class="card" style="width: 66rem">
   <%= image_tag "volun32.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0" href="community_work"><strong>Community Services</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -436,7 +445,7 @@
   </div>
   <div class="col">
     <div class="card h-50">
-       <div class="card" style="width: 35rem">
+       <div class="card" style="width: 66rem">
   <%= image_tag "volun31.png" %>
    <a class="link-offset-2 link-underline link-underline-opacity-0"href="community_work"><strong>Community Services</strong></a>
       <svg xmlns="http://localhost:3000/" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
@@ -457,14 +466,14 @@
 
 
 
-</div>
 
 
 
 
 
 
-<div class="container-fluid">
+
+
 
 <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
@@ -563,7 +572,7 @@ District Governor 2025/2026.</p>
 
 <div class="p-1">
 
-<div class="container-fluid">
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -596,7 +605,7 @@ District Governor 2025/2026.</p>
 
 <div class="p-3 mb-2 bg-info text-dark">
 
-<div class="container text-center">
+
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
     <div class="col"><strong>ABOUT US</strong><br>
     <p>We are a passionate group of individuals dedicated to community service, advocacy, and upholding the values of compassion, leadership, and community. As part of Lions Clubs International, we are united in our mission to uplift those in need and promote peace and understanding globally.</p>
@@ -657,3 +666,6 @@ Website:www.lagoseliteslionclub.com<br>
     </div>
   </div>
 </div></div>
+</div>
+</div>
+</div>
